@@ -36,14 +36,14 @@ nav ul.listing {
 	list-style: none;
 	margin-left:40px;
 	position: relative;
+
 }
 
-nav ul.socialmedia {
-	float: right;
+nav ul span.socialmedia {
 	list-style: none;
-	margin-right:40px;
 	position: relative;
-	top: 20px;
+	top: 18px;
+
 }
 
 nav ul li {
@@ -81,15 +81,13 @@ input {
 	nav ul {
 		margin-right: 0px;
 		float: left;
-
+		left: -20px;
+		text-align: center;
 	}
 
-	nav ul.listing {
-		width: 50%;
-	}
+	nav ul span.socialmedia li {
+		margin-top: 10px;
 
-	nav ul.socialmedia {
-		width: 10%;
 	}
 
 	nav .logo {
@@ -100,15 +98,20 @@ input {
 	nav ul li {
 		display: block;
 		width: 100%;
+	}
+
+	nav ul li.menuoptions {
+		border-bottom: 1px solid white
 
 	}
 
-	nav ul.socialmedia li {
-		border: 1px solid black;
+/*	nav ul.socialmedia li {
 		margin-top: 20px;
-		text-align: right;
+		text-align: center;
 		background: none;
-	}
+		
+
+	}*/
 
 	.icon {
 		display: block;
@@ -132,3 +135,20 @@ input {
 
 }
 
+#video {
+	padding: 10px;
+	text-align: center;
+
+}
+
+iframe {
+	text-align: center;
+	width: 50%;
+	height: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 20px;
+	padding: 20px;
+}
