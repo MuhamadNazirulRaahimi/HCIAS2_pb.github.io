@@ -97,6 +97,10 @@ input {
 	display: none;
 }
 
+.icon {
+	display: none;
+}
+
 
 @media all and (max-width: 968px) {
 
