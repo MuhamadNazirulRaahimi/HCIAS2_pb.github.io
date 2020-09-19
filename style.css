@@ -1,48 +1,15 @@
 /*the * meaning style everything*/
 
 * {
- margin: 0;
- padding: 0;
+ margin: 0px;
+ padding: 0px;
  font-family: sans-serif;
+ overflow-x: hidden; 
 }
 
 body {
 	background-color: #eee;
 }
-
-/*nav {
-	width: 100%;
-	background-color: #1b1b1b;
-	position: relative;
-
-}
-
-ul {
-	margin-left: 60px;
-}
-
-ul li {
-	list-style: none;
-	display: inline-block;
-	float: left;
-	line-height: 80px;
-
-
-}
-
-ul li a {
-	display: block;
-	text-decoration: none;
-	font-size: 14px;
-	font-family: arial;
-	color: white;
-	padding: 0 20px;
-}
-
-ul li a:hover {
-	color: red;
-
-}*/
 
 nav {
 	background-color: #1b1b1b;
@@ -64,11 +31,19 @@ nav .logo {
 
 }
 
-nav ul {
+nav ul.listing {
 	float: left;
 	list-style: none;
 	margin-left:40px;
 	position: relative;
+}
+
+nav ul.socialmedia {
+	float: right;
+	list-style: none;
+	margin-right:40px;
+	position: relative;
+	top: 20px;
 }
 
 nav ul li {
@@ -89,8 +64,6 @@ nav ul li a {
 nav ul li a:hover {
 	color: cyan;
 	border-radius: 5px;
-/*	box-shadow: 0 0 5px #33ffff,
-				0 0 5px #66ffff;*/
 }
 
 input {
@@ -104,9 +77,19 @@ input {
 
 @media all and (max-width: 968px) {
 
+	
 	nav ul {
 		margin-right: 0px;
 		float: left;
+
+	}
+
+	nav ul.listing {
+		width: 50%;
+	}
+
+	nav ul.socialmedia {
+		width: 10%;
 	}
 
 	nav .logo {
@@ -117,6 +100,14 @@ input {
 	nav ul li {
 		display: block;
 		width: 100%;
+
+	}
+
+	nav ul.socialmedia li {
+		border: 1px solid black;
+		margin-top: 20px;
+		text-align: right;
+		background: none;
 	}
 
 	.icon {
@@ -134,8 +125,9 @@ input {
 	}
 
 	#check:checked ~ ul {
-		display: block;
+		display: inline-block;
 	}
+
 
 
 }
